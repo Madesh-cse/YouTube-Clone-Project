@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/youtube clone/sign.css">
+</head>
+<body>
+    <header>
+        <div class="web-header">
+            <img src="/img/Color-YouTube-logo.jpg" alt="">
+        </div>
+    </header>
+    <div class="div">
+        <div class="sign-box">
+            <h1>Sign in</h1>
+            <form id="form" action="post">
+                <div class="form-group">
+                   <label for="exampleInputEmail1" id="address-label">Email address</label>
+                   <input type="email"  id="email" class="form-control"   aria-describedby="emailHelp" >
+                   <div class="alert-msg"></div>
+                </div>
+                <div class="form-group">
+                   <label for="exampleInputPassword1" id="password-label" >Password</label>
+                   <input type="password" id="password" class="form-control" >
+                </div>
+
+                <div class="form-group">
+                    <input type="password" id="Confirmpassword" class="form-control" name="configPass" placeholder="confrom Password">
+                    <div class="alert-msg"></div>
+                </div>
+                <button type="submit" 
+                         class="btn btn-outline-success btn-lg shadow" 
+                         onClick="auth(event)">Submit</button>
+             </form>
+        </div>
+    </div>
+
+    <div class="sub-menu">
+        <h3>you</h3>
+        <div class="main-menu">
+            <div class="left-col">
+                <ul>
+                    <li><i class="fa-solid fa-clock-rotate-left fa-lg"></i></li> 
+                    <li><i class="fa-regular fa-clock fa-lg"></i></li>
+                    <li><i class="fa-regular fa-thumbs-up fa-lg"></i></li>
+                    <li><i class="fa-solid fa-bars-staggered fa-lg"></i></li>
+                </ul>
+                
+            </div>
+            <div class="right-col">
+               <ul>
+                <li><a href="">History</a></li>
+                <li><a href=""> Watch Later</a></li>
+                <li><a href="">Liked Video</a></li>
+                <li><a href="">Jackie Chan Advent..</a></li>
+               </ul>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <div class="sub-menu">
+        <h3>Subscription</h3>
+        <div class="main-menu">
+            <div class="left-col">
+                <div class="sidebar-img">
+                    <ul>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        
+                    </ul>
+                </div>
+            </div>
+            <div class="right-col">
+               <ul>
+                <li><a href="">Madan Gowri</a></li>
+                <li><a href=""> Risipididiya</a></li>
+                <li><a href="">Mic Set</a></li>
+                <li><a href="">Parithbangal</a></li>
+                <li><a href="">Village Cooking Channel</a></li>
+                <li><a href="">Vilage Cooking Factory</a></li>
+                <li><a href="">Behindwoods</a></li>
+                <li><a href="">Sothanaigal</a></li>
+                <li><a href="">Minute Mystry</a></li>
+            </ul>
+      
+            </div>
+        </div>
+    </div>
+    <hr>
+    <div class="sub-menu">
+        <h3>Explore</h3>
+        <div class="main-menu">
+            <div class="left-col">
+                <ul>
+                    <li><i class="fa-solid fa-arrow-trend-up fa-lg"></i></li> 
+                    <li><i class="fa-solid fa-bag-shopping fa-lg"></i></li>
+                    <li><i class="fa-solid fa-music fa-lg"></i></li>
+                    <li><i class="fa-solid fa-film fa-lg"></i></li>
+                    <li><i class="fa-solid fa-film fa-lg"></i></li> 
+                    <li><i class="fa-regular fa-newspaper fa-lg"></i></li>
+                    <li><i class="fa-solid fa-medal fa-lg"></i></li>
+                    <li><i class="fa-solid fa-graduation-cap fa-lg"></i></li>
+                </ul>
+                
+            </div>
+            <div class="right-col">
+               <ul>
+                <li><a href="">Trenidng</a></li>
+                <li><a href="">Shopping</a></li>
+                <li><a href="">Music</a></li>
+                <li><a href="">Flims</a></li>
+                <li><a href="">Live Gaming</a></li>
+                <li><a href="">News</a></li>
+                <li><a href="">Sports</a></li>
+                <li><a href="">Learing</a></li>
+                <li><a href="">Fashion & Beauty</a></li>
+                <li><a href="">Poadcast</a></li>
+            </ul>
+      
+            </div>
+        </div>
+    </div>
+    
+     
+</body>
+<script src="sign.js"></script>
+</html>
