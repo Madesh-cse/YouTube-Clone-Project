@@ -263,7 +263,7 @@
 
 const rightArrowContainer = document.querySelector(".scrollable-tabs-container .right-arrow");
 
-// const scrollTabs = document.getElementById("closing-tabs")
+const ScrollTab = document.querySelector(".scrollable-tabs-container");
 
  const GridElement = document.querySelector(".video-content");
 
@@ -304,7 +304,6 @@ const RemoveClassActive = () => {
  tabs.forEach((tab) =>{
     tab.addEventListener("click", () =>{
         RemoveClassActive()
-
         tab.classList.add("active");
        
 
@@ -351,7 +350,7 @@ leftArrow.addEventListener("click",() =>{  //when the leftarrow is clicked is mo
 })
 
 
-
+910622104057
 
 
 
@@ -363,7 +362,7 @@ leftArrow.addEventListener("click",() =>{  //when the leftarrow is clicked is mo
 
     main.classList.toggle("main-content");
 
-    // scrollTabs.classList.toggle("scrollable-tabs");
+    ScrollTab.classList.toggle("scrollable-tabs")
 
  })
 

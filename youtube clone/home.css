@@ -20,6 +20,7 @@
     --secondry-color:#fff;
     --scrollable-tab-color:#fff;
     --linear-background :#000;
+    --clr-grey-9 :#c0c0c034;
 }
 header{
     position: sticky;
@@ -27,6 +28,9 @@ header{
 }
 body{
    font-family:Roboto, Arial, sans-serif ; 
+}
+nav{
+    width:100%;
 }
 .navbar{
     display: flex;
@@ -40,7 +44,7 @@ body{
     display: flex;
 }
 .navbar-logo i{
-    padding: 25px 15px;
+    padding: 35px 15px;
     color:var(--secondry-color);
     cursor: pointer;
 }
@@ -84,7 +88,7 @@ body{
     margin-right: 20px;
     
 }
-.header-icon img{
+.theme-icon{
     width:50px;
     height:25px;
     object-fit: contain;
@@ -140,6 +144,7 @@ body{
     height:100%;
     position: fixed;
     background-color:var(--primary-color);
+    color:var(--secondry-color);
     padding-left: 10px;
     margin-top: -65px;
     
@@ -164,6 +169,9 @@ body{
     background-color: var(--primary-color);
    
 }
+/* .sidrbar-close{
+    margin-left: 20px;
+} */
 .sidebar:hover{
     overflow-y: scroll;
 }
@@ -173,7 +181,7 @@ body{
 
   
   ::-webkit-scrollbar-thumb {
-    background-color: #c0c0c0;
+    background-color: #a8bbbb;
     border-radius: 20px;
     border: 6px solid transparent;
     background-clip: content-box;
@@ -202,7 +210,7 @@ body{
 }
 .first-box a{
     text-decoration: none;
-    color:#000;
+    color:var(--secondry-color);
 }
 .first-box li:hover{
     width:85%;
@@ -219,7 +227,7 @@ body{
 }
 .second-box a{
     text-decoration: none;
-    color:#000
+    color:var(--secondry-color);
 }
 .second-box{
     padding-left: 25px;
@@ -261,7 +269,9 @@ hr{
 }
 
 .scrollable-tabs{
-    margin-left: -100px;
+   background-color: red;
+   position: absolute;
+   margin-left: -90px;
 }
 
 .scrollable-tabs-container {
@@ -291,7 +301,6 @@ border-radius: 50px;
     list-style-type: none;
     overflow-x: scroll;
     scroll-behavior: smooth;
-    border:1px solid #000;
    
 }
 
@@ -310,7 +319,7 @@ border-radius: 50px;
     color: var(--secondry-color);
     text-decoration: none;
     background: rgba(128, 128, 128, 0.299);
-    padding: 8px 15px;
+    padding: 8px 20px;
     display: inline-block;
     border-radius: 5px;
     user-select: none;
@@ -432,38 +441,46 @@ border-radius: 50px;
 /* media queries*/
 /* ipads and tablets view */
 @media (min-width:320px) and (max-width:480px){
+
+
     header,body{
         width:100%;
         height:100%;
         position: sticky;
         top:0;
     }
+
+
+    .navbar-logo i{
+        font-size: 15px;
+    }
     .navbar{
         height:70px; 
         display: flex;
         justify-content: space-evenly;
     }
-    header,.scrollable-tabs-container{
-        margin-left: -3px;
+   .scrollable-tabs-container{
+        margin-left: 30px;;
     }
 
     .scrollable-tabs-container a {
         padding: 8px;
         display: inline-block;
+        font-size: 10px;
     }
 
     .header-input input{
         width:200px;
-        height:20px;
+        height:25px;
     }
     .input-btn button{
         width:30px;
-        height:20px;
+        height:25px;
     }
     .youtube-img img{
         width:45px;
         height:auto;
-        margin: 15px 20px 0 -10px;
+        margin:20px 10px 10px 5px;
     }
     .header-icon i{
         font-size: 10px;
@@ -494,7 +511,7 @@ border-radius: 50px;
     .video-content{
         display: grid;
         grid-template-columns:1fr 1fr;
-        margin-left: -5px;
+        margin-left:40px;
     }
     
     .template-about1{
@@ -516,27 +533,32 @@ border-radius: 50px;
   
 }
 
- @media screen and (min-width:768px) and (max-width:1024px){
+ @media screen and (min-width:480px) and (max-width:768px){
 
     body,header{
+        position: sticky;
+        top:0;
         width:100%;
         height:100%;
     }
-
-    header,.scrollable-tabs-container{
-        margin-left: -1px;
+    .scrollable-tabs-container{
+       margin-left:70px ;
     }
    .video-content{
         display: grid;
-        grid-template-columns:1fr 1fr;
-        margin-left: -1px;
+        grid-template-columns: 1fr 1fr;
+        margin-left:100px;
+        column-gap: 10px;
+    }
+    .video1{
+        width:280px;
     }
     .sidebar{
         display: none;
-    }
+     }
     .scrollable-tabs-container a {
-        padding: 8px;
-        font-size: 10px;
+        padding: 10px;
+        font-size: 15px;
     }
     .scrollable-tabs-container svg{
         width: 40px;
@@ -545,7 +567,7 @@ border-radius: 50px;
         }
 
     .inner-sidebar{
-        width:50px;
+        width:80px;
     }
 
     .navbar{
@@ -554,33 +576,97 @@ border-radius: 50px;
         justify-content: space-between;
     }
     .header-input input{
-        width:200px;
-        height:20px;
+        width:300px;
+        height:35px;
     }
     .input-btn button{
-        width:30px;
-        height:20px;
+        width:50px;
+        height:35px;
     }
     .youtube-img img{
-        width:45px;
+        width:100px;
         height:auto;
         margin: 15px 20px 0 -10px;
     }
     .header-icon i{
-        font-size: 10px;
+        font-size: 15px;
         margin-right:5px;
         
     }
     .voice-record i{
-        font-size: 10px;
+        font-size: 15px;
         padding: 10px;
     }
     .header-icon img{
         width:20px;
     }
-    .video1{
-        width:300px;
+ }
+
+ @media screen and (min-width:768px) and (max-width:1024px){
+
+    body,header{
+        width:100%;
+        height:100%;
     }
+    .scrollable-tabs-container{
+       margin-left:70px ;
+    }
+   .video-content{
+        display: grid;
+        grid-template-columns:1fr 1fr;
+        margin-left:100px;
+    }
+    .video1{
+        width:350px;
+    }
+    .sidebar{
+        display: none;
+     }
+    .scrollable-tabs-container a {
+        padding: 10px;
+        font-size: 15   px;
+    }
+    .scrollable-tabs-container svg{
+        width: 40px;
+        height: 40px;
+        padding: 8px;
+        }
+
+    .inner-sidebar{
+        width:80px;
+    }
+
+    .navbar{
+        height:70px; 
+        display: flex;
+        justify-content: space-between;
+    }
+    .header-input input{
+        width:400px;
+        height:40px;
+    }
+    .input-btn button{
+        width:50px;
+        height:40px;
+    }
+    .youtube-img img{
+        width:100px;
+        height:auto;
+        margin: 15px 20px 0 -10px;
+    }
+    .header-icon i{
+        font-size: 20px;
+        margin-right:5px;
+        
+    }
+    .voice-record i{
+        font-size: 25px;
+        padding: 10px;
+    }
+    .header-icon img{
+        width:20px;
+    }
+    
     .template-about1{
         font-size: 10px;
     }

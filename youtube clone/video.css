@@ -6,10 +6,20 @@
 :root{
     --primary-color:#fff;
     --secondry-color:hwb(0 0% 100% / 0.906);
+    --description-color:#c0c0c081;
+    --description1-btn-color:#000;
+    --description-btn-name-color:#808080;
+    --clr-grey-9 : #b8b8b8;
+    
+    
 }
 .dark-mode{
     --primary-color:#000000;
     --secondry-color:#fff;
+    --description-color:rgba(128, 128, 128, 0.23);
+    --description1-btn-color:#fff;
+    --description-btn-name-color:#fff;
+    --clr-grey-9 :#c0c0c034;
 } 
 header,body{
     position: sticky;
@@ -23,10 +33,8 @@ body{
 
 ::-webkit-scrollbar {
     width: 20px;
-    background: #fff;
+   
   }
-
-  
   ::-webkit-scrollbar-thumb {
     background-color: #c0c0c0;
     border-radius: 20px;
@@ -137,9 +145,15 @@ body{
 }
 
 .first-box li:hover{
-    background-color: #c0c0c0;
-    width:80%;
+   background-color: var(--clr-grey-9 );
+    width:90%;
+    border-radius: 10px;
 }
+.first-box a{
+    text-decoration: none;
+    color:var(--secondry-color)
+}
+ 
      
 .sidebar-menu ul{
     list-style-type: none;
@@ -155,11 +169,16 @@ hr{
 .span{
     padding-left: 30px;
     font-size: 18px;
+    color:var(--secondry-color)
 }
 .second-box li:hover{
-    background-color: rgba(192, 192, 192, 0.809);
+    background-color: var(--clr-grey-9 );
     border-radius: 5px;
     width:90%;
+}
+.second-box a{
+    text-decoration: none;
+    color:var(--secondry-color)
 }
 .subcription-box{
     margin-top: 20px;
@@ -176,12 +195,17 @@ hr{
     list-style-type: none;
     line-height: 40px;
 }
+.second-box1 li :hover{
+    width:90%;
+    background-color: var(--clr-grey-9 );
+    border-radius: 5px;
+}
 .second-box1 ul{
     margin-top: 20px;
 }
 .second-box1 a{
     text-decoration: none;
-    color:#000
+    color:var(--secondry-color);
 }
 .second-box1 img{
     width:30px;
@@ -224,6 +248,7 @@ hr{
 }
 .channel-name{
     padding:5px 20px;
+    color:var(--secondry-color)
 }
 .channel-name p{
     font-family: sans-serif;
@@ -238,6 +263,7 @@ hr{
     border:1px soid #000;
     padding: 10px;
     text-decoration: none;
+    color:var(--secondry-color)
 }
 .sub-btn button{
     margin: 15px ;
@@ -257,11 +283,19 @@ hr{
     border: 1px solid #c0c0c0;
     cursor: pointer;
     margin-left: 15px;
+    background-color:var(--description-color) ;
+    color:var(--description1-btn-color);
+    
+}
+#myBtn{
+    color:var(--secondry-color)
 }
 .span2{
     padding-left: 10px;
     font-size: 15px;
     font-weight: 600;
+   
+    
 }
 .download button:hover{
     background-color: rgba(128, 128, 128, 0.297);
@@ -335,7 +369,11 @@ hr{
     font-family: sans-serif;
 }
 .span2{
-    color:gray
+    color:var(--description-btn-name-color);
+}
+
+.para-line{
+    color: var(--secondry-color);
 }
 .video-about{
     font-size: 17px;
@@ -357,6 +395,7 @@ hr{
     padding-top: 30px;
     padding-left: 10px;
     line-height: 20px;
+    color:var(--secondry-color)
 }
 .video-course-link i{
     padding-right: 10px;
@@ -366,9 +405,11 @@ hr{
     padding-top: 20px;
     font-family: sans-serif;
     font-size: 14px;
+
 }
 .detail-course-link ul{
     padding-top: 15px;
+    color:var(--secondry-color)
 }
 .source-link{
     padding-top: 20px;
@@ -377,9 +418,12 @@ hr{
 }
 .source-link li{
     padding-top: 5px;
+    color: var(--secondry-color);
 }
 .thanks-to{
     padding-top: 20px;
+    color:var(--secondry-color);
+    padding-bottom: 20px;
 }
 
 .command-box{
@@ -391,8 +435,12 @@ hr{
     padding-top: 30px;
     font-size: 18px;
 }
+.command-header-box{
+    color:var(--secondry-color)
+}
 .command-icon-sort span{
     margin-left: 30px;
+    color:var(--secondry-color);
 }
 .command-mail-box{
     display: flex;
@@ -409,6 +457,7 @@ hr{
     margin-left: 10px;
     transition:  0.2s ease;
     padding-top: 10px;
+    background-color: var(--primary-color);
     
 }
 .command-mail-box input:focus{
@@ -437,7 +486,7 @@ hr{
 .thanks-comment p{
     padding-top: 20px;
     font-size: 15px;
-    color:#000;
+    color:var(--secondry-color);
 }
 .comment2img{
     width: 40px;

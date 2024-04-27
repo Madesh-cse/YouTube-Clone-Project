@@ -108,6 +108,33 @@ const video = [
         authorview:"492view",
         channelview:"2year ago"
     },
+    {
+        id:10,
+        MainImg : "/img/mainimg10.jpg",
+        profile:"/youtubeimg/sidebarimg1.jpg",
+        template:"MERN STACK FULL Tutorialfor Beginner | complete all in one..",
+        author:"Dave Gray",
+        authorview:"492view",
+        channelview:"2year ago"
+    },
+    {
+        id:11,
+        MainImg : "/img/mainimg16.jpg",
+        profile:"/youtubeimg/sidebarimg1.jpg",
+        template:"LEO - Official Trailer | Thalapathy Vijay | Lokesh Kanagaraj....",
+        author:"Dave Gray",
+        authorview:"492view",
+        channelview:"2year ago"
+    },
+    {
+        id:12,
+        MainImg : "/img/mainimg17.jpg",
+        profile:"/youtubeimg/sidebarimg1.jpg",
+        template:"Thunivu Official Trailer | Ajith Kumar | H Vinoth | Zee Studios",
+        author:"Dave Gray",
+        authorview:"492view",
+        channelview:"2year ago"
+    },
    
  ]
    
